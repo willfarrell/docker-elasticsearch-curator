@@ -1,0 +1,20 @@
+---
+
+client:
+  hosts:
+    - ${ELASTICSEARCH_HOST:elasticsearch}
+  port: ${ELASTICSEARCH_POST:9200}
+  url_prefix:
+  use_ssl: True
+  certificate:
+  client_cert:
+  client_key:
+  ssl_no_validate: True
+  http_auth: ${ELASTICSEARCH_AUTH}
+  timeout: 120
+  master_only: False
+
+logging:
+  loglevel: DEBUG
+  logfile:
+  logformat: default

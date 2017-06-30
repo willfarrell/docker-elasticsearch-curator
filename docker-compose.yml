@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+
+  curator:
+    build: .
+    env_file:
+      - env/curator.env
